@@ -12,7 +12,7 @@
           Powered&nbsp;by&nbsp;
           <a href="https://github.com/imsyy/home/">imsyy</a>
           And&nbsp;
-          <a href="https://www.cloudflare/">CloudFlare</a>
+          <a href="https://www.cloudflare.com/">CloudFlare</a>
         </span>
         <!-- 以下信息请不要修改哦 -->
         <span class="hidden">

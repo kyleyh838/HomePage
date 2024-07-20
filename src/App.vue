@@ -109,9 +109,9 @@ onMounted(() => {
   const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
   const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   const styleContent = "color: rgb(30,152,255);";
-  const title1 = "Who Care-HomePage";
+  const title1 = "Who's there?-HomePage";
   const content = `\n\n版本: ${config.version}`;
-  console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
+  console.info(`%c${title1} %c${content}`, styleTitle1, styleContent);
 });
 
 onBeforeUnmount(() => {

@@ -3,22 +3,24 @@
     <Transition name="fade" mode="out-in">
       <div v-if="!store.playerState || !store.playerLrcShow" class="power">
         <span>
-          <span :class="startYear < fullYear ? 'c-hidden' : 'hidden'">Powered&nbsp;by&nbsp;</span>
+          <span :class="startYear < fullYear ? 'c-hidden' : 'hidden'">&nbsp;</span>
           <span v-if="startYear < fullYear"
             class="site-start">
             {{ startYear }}
           </span>
-          //-{{ fullYear }}
+          {{ fullYear }}
+          Powered&nbsp;by&nbsp;
           <a href="https://github.com/imsyy/home/">imsyy</a>
-        </span>
-        <!-- 以下信息请不要修改哦 -->
-        <span class="hidden">
           And&nbsp;
           <a href="https://www.cloudflare/">CloudFlare</a>
         </span>
+        <!-- 以下信息请不要修改哦 -->
+        <span class="hidden">
+          &nbsp;
+        </span>
         <!-- 站点备案 -->
         <span>
-          &amp;
+          &nbsp;
           <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
             {{ siteIcp }}
           </a>

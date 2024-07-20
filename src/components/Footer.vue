@@ -2,22 +2,26 @@
   <footer id="footer" :class="store.footerBlur ? 'blur' : null">
     <Transition name="fade" mode="out-in">
       <div v-if="!store.playerState || !store.playerLrcShow" class="power">
-//        <span>
-//          <span :class="startYear < fullYear ? 'c-hidden' : 'hidden'">Copyright&nbsp;</span>
-//          &copy;
-//          <span v-if="startYear < fullYear"
-//            class="site-start">
-//            {{ startYear }}
-//            -
-//          </span>
-//          {{ fullYear }}
-//          <a :href="siteUrl">{{ siteAuthor }}</a>
-//        </span>
+        <span>
+          <span :class="startYear < fullYear ? 'c-hidden' : 'hidden'">Powered&nbsp;by&nbsp;</span>
+          <span v-if="startYear < fullYear"
+            class="site-start">
+            {{ startYear }}
+          </span>
+          //-{{ fullYear }}
+          <a href="https://github.com/imsyy/home/">imsyy</a>
+        </span>
         <!-- 以下信息请不要修改哦 -->
         <span class="hidden">
+          And&nbsp;
+          <a href="https://www.cloudflare/">CloudFlare</a>
         </span>
         <!-- 站点备案 -->
         <span>
+          &amp;
+          <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
+            {{ siteIcp }}
+          </a>
         </span>
       </div>
       <div v-else class="lrc">
